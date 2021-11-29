@@ -1,4 +1,4 @@
-# [Nautilus](https://github.com/GNOME/nautilus) [DOSBox](https://www.dosbox.com/) Script
+# [Nautilus](https://gitlab.gnome.org/GNOME/nautilus) [DOSBox](https://www.dosbox.com/) Script
 
 A simple script to launch an executable or mount a directory in DOSBox.\
 Right click any executable or folder, go to "Scripts" and select "Run with DOSBox".
