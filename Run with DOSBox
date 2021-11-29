@@ -7,5 +7,5 @@ if which dosbox; then
 		dosbox -c "mount A \"$@\"" -c A: -c cls
 	fi
 else
-	notify-send "Dosbox is not installed"
+	notify-send "DOSBox is not installed"
 fi
