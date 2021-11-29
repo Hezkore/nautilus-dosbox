@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if which dosbox; then
+	if [ -f "$@" ]; then
+		dosbox $@
+	else
+		dosbox -c "mount A \"$@\"" -c A: -c cls
+	fi
+else
+	notify-send "Dosbox is not installed"
+fi
