@@ -2,9 +2,9 @@
 
 if which dosbox; then
 	if [ -f "$@" ]; then
-		dosbox $@
+		dosbox -c "echo off" -c cls -c "echo Running $@" -c "echo." $@
 	else
-		dosbox -c "mount A \"$@\"" -c A: -c cls
+		dosbox -c "echo off" -c "mount A \"$@\"" -c A: -c cls -c "echo Mounted $@ as A:" -c "echo."
 	fi
 else
 	notify-send "DOSBox is not installed"
